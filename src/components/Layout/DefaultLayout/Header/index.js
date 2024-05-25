@@ -48,28 +48,23 @@ function Header() {
                 <div className={clsx('collapse', 'navbar-collapse', styles.navCollapse)} id="navbarSupportedContent">
                     <ul className={clsx('navbar-nav', styles.navMenu)}>
                         <li className={clsx('nav-item', styles.navItem)}>
-                            <a className={clsx('nav-link', styles.navLink, styles.navActive)} href="./">
+                            <a className={clsx('nav-link', styles.navLink, styles.navActive)} href="#home">
                                 Home
                             </a>
                         </li>
                         <li className={clsx('nav-item', styles.navItem)}>
-                            <a className={clsx('nav-link', styles.navLink)} href="./">
-                                Home
+                            <a className={clsx('nav-link', styles.navLink)} href="#aboutme">
+                                About Me
                             </a>
                         </li>
                         <li className={clsx('nav-item', styles.navItem)}>
-                            <a className={clsx('nav-link', styles.navLink)} href="#3">
-                                Home
+                            <a className={clsx('nav-link', styles.navLink)} href="#projects">
+                                My Projects
                             </a>
                         </li>
                         <li className={clsx('nav-item', styles.navItem)}>
-                            <a className={clsx('nav-link', styles.navLink)} href="#4">
-                                Home
-                            </a>
-                        </li>
-                        <li className={clsx('nav-item', styles.navItem)}>
-                            <a className={clsx('nav-link', styles.navLink)} href="#5">
-                                Home
+                            <a className={clsx('nav-link', styles.navLink)} href="#contact">
+                                Contact
                             </a>
                         </li>
                     </ul>
