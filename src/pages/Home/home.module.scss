@@ -1,0 +1,107 @@
+.introduction {
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--odd-bg);
+    color: var(--odd-color);
+    
+    .avatar {
+        width: 250px;
+        
+        img {
+            border-radius: 200px;
+        }
+    }
+
+    .name {
+        font-size: 4rem;
+        font-weight: bold;
+        padding-top: 1rem;
+        background: var(--vp-home-hero-name-background);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: var(--vp-home-hero-name-color);
+    }
+
+    .major {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .title {
+        font-size: 1.25rem;
+        padding: 1rem 0 2rem; 
+    }
+
+    .resume {
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--nav-resume-color);
+        background: var(--vp-home-hero-name-background);
+        padding: 1rem 3rem;
+        border-radius: 100px;
+    }
+}
+
+.aboutMe {
+    background-color: var(--even-bg);
+    color: var(--even-color);
+    
+    .flexCol {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .title {
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 4rem 0 0;
+    }
+
+    .avatar {
+        img {
+            border-radius: 20px;
+        }
+    }
+
+    .description {
+        padding: 0 2rem;
+    }
+
+    .stats {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        // justify-content: center;
+    }
+
+    .block {
+        width: 50%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .blockLeft {
+        border-right: 1px solid var(--white);
+        border-left: 2px solid var(--white);
+    }
+    
+    .blockRight {
+        border-left: 1px solid var(--white);
+        border-right: 2px solid var(--white);
+    }
+
+    .number {
+        font-size: 2rem;
+        font-weight: bold;
+        background: var(--vp-home-hero-name-background);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: var(--vp-home-hero-name-color);
+    }
+}
