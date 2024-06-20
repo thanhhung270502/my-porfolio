@@ -3,6 +3,7 @@ import styles from './header.module.scss';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
     const [isLight, setIsLight] = useState(true);
@@ -30,12 +31,12 @@ function Header() {
 
     return (
         <nav className={clsx('navbar', 'navbar-expand-lg', 'bg-body-tertiary', styles.nav)}>
-            <div className="container">
+            <div className={clsx('container', styles.container)}>
                 <a className={clsx('navbar-brand', styles.logo)} href="./">
                     Thanh Hung
                 </a>
                 <button
-                    className="navbar-toggler"
+                    className={clsx('navbar-toggler', styles.navbar__btn)}
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent"
@@ -43,7 +44,7 @@ function Header() {
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <span className="navbar-toggler-icon"></span>
+                    <FontAwesomeIcon icon={faBars} />
                 </button>
                 <div className={clsx('collapse', 'navbar-collapse', styles.navCollapse)} id="navbarSupportedContent">
                     <ul className={clsx('navbar-nav', styles.navMenu)}>
@@ -68,10 +69,10 @@ function Header() {
                             </a>
                         </li>
                     </ul>
-                </div>
-                <div className={clsx(styles.darkMode)} onClick={handleChangeDarkMode}>
-                    {isLight && <FontAwesomeIcon icon={faSun} />}
-                    {!isLight && <FontAwesomeIcon icon={faMoon} />}
+                    <div className={clsx(styles.darkMode)} onClick={handleChangeDarkMode}>
+                        {isLight && <FontAwesomeIcon icon={faSun} />}
+                        {!isLight && <FontAwesomeIcon icon={faMoon} />}
+                    </div>
                 </div>
             </div>
         </nav>

@@ -73,6 +73,7 @@
 
     --nav-bg: var(--white);
     --nav-color: var(--black);
+    --nav-border: var(--gray-dark-3);
     --nav-resume-color: var(--white);
 
     --border-color: var(--black-blue-light-4);
@@ -89,6 +90,7 @@
 
     --nav-bg: var(--blue-dark-3);
     --nav-color: var(--white);
+    --nav-border: var(--gray-dark);
 
     --border-color: var(--white);
 }
@@ -109,4 +111,8 @@ body {
 
 .textBold {
     font-weight: bold;
+}
+
+.flexWrap {
+    flex-wrap: wrap;
 }
